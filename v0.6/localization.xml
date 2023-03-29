@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<body>
+<languages>
+    <eng>English</eng>
+    <rus>Русский</rus>
+</languages>
+<commands>
+    <maint_title>
+        <rus>Erosion Network Order Extractor 0.6a</rus>
+        <eng>Erosion Network Order Extractor 0.6a</eng>
+    </maint_title>
+    <menu_file>
+        <rus>Файл</rus>
+        <eng>File</eng>
+    </menu_file>
+    <menu_fileopen>
+        <rus>Открыть</rus>
+        <eng>Open</eng>
+    </menu_fileopen>
+    <menu_fileclose>
+        <rus>Закрыть</rus>
+        <eng>Close</eng>
+    </menu_fileclose>
+    <menu_fileexit>
+        <rus>Выход</rus>
+        <eng>Exit</eng>
+    </menu_fileexit>
+    <menu_language>
+        <rus>Язык</rus>
+        <eng>Language</eng>
+    </menu_language>
+    <menu_help>
+        <rus>Помощь</rus>
+        <eng>Help</eng>
+    </menu_help>
+    <menu_about>
+        <rus>О программе ENOE 0.6a</rus>
+        <eng>About ENOE 0.6a</eng>
+    </menu_about>
+    <main_demfilepath>
+        <rus>Путь к файлу ЦМР:</rus>
+        <eng>DRM filepath</eng>
+    </main_demfilepath>
+    <main_rasterlayers>
+        <rus>Растровые слои:</rus>
+        <eng>Raster layers:</eng>
+    </main_rasterlayers>
+    <main_processing>
+        <rus>Обработка и анализ:</rus>
+        <eng>Processing and analysis:</eng>
+    </main_processing>
+    <main_topovis>
+        <rus>Визуализация топографии:</rus>
+        <eng>Topography visualization:</eng>
+    </main_topovis>
+    <main_flow_detect_accuracy>
+        <rus>Точность распознавания:</rus>
+        <eng>Flow detecting accuracy:</eng>
+    </main_flow_detect_accuracy>
+    <main_interpolation_method>
+        <rus>Метод интерполяции:</rus>
+        <eng>Interpolation method:</eng>
+    </main_interpolation_method>
+    <main_chk_rastermap>
+        <rus>Растровая карта</rus>
+        <eng>Raster map</eng>
+    </main_chk_rastermap>
+    <main_chk_contourmap>
+        <rus>Контурная карта</rus>
+        <eng>Contour map</eng>
+    </main_chk_contourmap>
+    <main_chk_3d>
+        <rus>3D</rus>
+        <eng>3D</eng>
+    </main_chk_3d>
+    <main_chk_flow_min>
+        <rus>Мин</rus>
+        <eng>Min</eng>
+    </main_chk_flow_min>
+    <main_chk_flow_middle>
+        <rus>Среднее</rus>
+        <eng>Middle</eng>
+    </main_chk_flow_middle>
+    <main_chk_flow_max>
+        <rus>Макс</rus>
+        <eng>Max</eng>
+    </main_chk_flow_max>
+    <std_value>
+        <rus>Сред. квадр. откл.</rus>
+        <eng>Standard deviation</eng>
+    </std_value>
+    <main_chk_interp_lin>
+        <rus>Линейный</rus>
+        <eng>Linear</eng>
+    </main_chk_interp_lin>
+    <main_chk_interp_near>
+        <rus>Ближ. сосед</rus>
+        <eng>Nearest</eng>
+    </main_chk_interp_near>
+    <main_chk_interp_cubic>
+        <rus>Кубический</rus>
+        <eng>Cubic</eng>
+    </main_chk_interp_cubic>
+    <main_btn_stat>
+        <rus>Статистика слоя</rus>
+        <eng>Layer statisctics</eng>
+    </main_btn_stat>
+    <main_btn_open_drm>
+        <rus>1.Открыть ЦМР</rus>
+        <eng>1.Open DRM</eng>
+    </main_btn_open_drm>
+    <main_btn_enchance_drm>
+        <rus>2.Исправить ЦМР</rus>
+        <eng>2.Enchance DRM</eng>
+    </main_btn_enchance_drm>
+    <main_btn_flowdir>
+        <rus>3.Напр. стока</rus>
+        <eng>3.Flow direction</eng>
+    </main_btn_flowdir>
+    <main_btn_detectflows>
+        <rus>4.Детект. потоков</rus>
+        <eng>4.Detect flows</eng>
+    </main_btn_detectflows>
+    <main_btn_interpbs>
+        <rus>5.Базисн. поверхн.</rus>
+        <eng>5.Basic surfaces</eng>
+    </main_btn_interpbs>
+    <main_btn_bsdiff>
+        <rus>6.Разность БП</rus>
+        <eng>6.BS difference</eng>
+    </main_btn_bsdiff>
+    <main_btn_export>
+        <rus>7.Экспорт</rus>
+        <eng>7.Export</eng>
+    </main_btn_export>
+    <main_btn_report>
+        <rus>9.Отчет</rus>
+        <eng>9.Report</eng>
+    </main_btn_report>
+    <main_lbl_value>
+        <rus>Значения под курсором:</rus>
+        <eng>Values under cursor:</eng>
+    </main_lbl_value>
+    <main_lbl_xyz>
+        <rus>Клик карты</rus>
+        <eng>Click map</eng>
+    </main_lbl_xyz>
+    <formexp_group1>
+        <rus>1. Выберите слой экспорта</rus>
+        <eng>1. Select layer for export</eng>
+    </formexp_group1>
+    <formexp_group2>
+        <rus>2. Выберите формат</rus>
+        <eng>2. Select format for export</eng>
+    </formexp_group2>
+    <formexp_label1>
+        <rus>Пример. Для слоя порядка водотоков </rus>
+        <eng>Example. For flow order layer representing stream orders</eng>
+    </formexp_label1>
+    <formexp_label2>
+        <rus>доступны растровый geotiff и векторный shp</rus>
+        <eng>raster geotiff and shapefile vector formats are available.</eng>
+    </formexp_label2>
+    <cancel_btn>
+        <rus>Отмена</rus>
+        <eng>Cancel</eng>
+    </cancel_btn>
+    <ok_btn>
+        <rus>ОК</rus>
+        <eng>Ok</eng>
+    </ok_btn>
+    <pdf_btn>
+        <rus>в PDF</rus>
+        <eng>to PDF</eng>
+    </pdf_btn>
+    <print_btn>
+        <rus>Печать</rus>
+        <eng>Print</eng>
+    </print_btn>
+    <yes_btn>
+        <rus>Да</rus>
+        <eng>Yes</eng>
+    </yes_btn>
+    <no_btn>
+        <rus>Нет</rus>
+        <eng>No</eng>
+    </no_btn>
+    <app_dialog_open>
+        <rus>Открыть файл ЦМР</rus>
+        <eng>Open DRM file</eng>
+    </app_dialog_open>
+    <app_dialog_export>
+        <rus>Выберите каталог для сохранения отчета</rus>
+        <eng>Select directory to save report</eng>
+    </app_dialog_export>
+    <app_dialog_export_not_empty>
+        <rus>Выбранный каталог не пустой. Продолжить?</rus>
+        <eng>Selected directory is not empty. Do you wish to continue?</eng>
+    </app_dialog_export_not_empty>
+    <app_dialog_exit_title>
+        <rus>Завершение работы программы</rus>
+        <eng>Exit application</eng>
+    </app_dialog_exit_title>
+    <app_dialog_exit_text>
+        <rus>Вы уверены?</rus>
+        <eng>Are you sure?</eng>
+    </app_dialog_exit_text>
+    <compute_basesurf_dialog_title>
+        <rus>Базисная поверхность</rus>
+        <eng>Basis surface</eng>
+    </compute_basesurf_dialog_title>
+    <compute_basesurf_dialog>
+        <rus>Вы действительно хотите вычислить базисную поверхность # порядка?</rus>
+        <eng>Do yo wand to compute base surface of # order?</eng>
+    </compute_basesurf_dialog>
+    <basesurf_diff_window_title>
+        <rus>Пожалуйста, выберите две базисные поверхности для вычисления разности </rus>
+        <eng>Please, select two basis surfaces to compute difference between them</eng>
+    </basesurf_diff_window_title>
+    <basesurf_diff_lbl1>
+        <rus>Выберите BS1</rus>
+        <eng>Choose BS1</eng>
+    </basesurf_diff_lbl1>
+    <basesurf_diff_lbl2>
+        <rus>Выберите BS2</rus>
+        <eng>Choose BS2</eng>
+    </basesurf_diff_lbl2>
+    <compute_basesurf_diff_dialog_title>
+        <rus>Разностная поверхность...</rus>
+        <eng>Difference surface...</eng>
+    </compute_basesurf_diff_dialog_title>
+    <compute_basesurf_diff_dialog>
+        <rus>Вы действительно хотите вычислить разностную поверхность</rus>
+        <eng>Do yo wand to compute difference base surface base</eng>
+    </compute_basesurf_diff_dialog>
+    <map_window_3d_dialog_title>
+        <rus>Ограничения  вывода 3D</rus>
+        <eng>3D output limitations</eng>
+    </map_window_3d_dialog_title>
+    <map_window_3d_dialog_text>
+        <rus>3D window is available for relief only</rus>
+        <eng>3D window is available for relief only</eng>
+    </map_window_3d_dialog_text>
+    <map_window_title_srtm>
+        <rus>Цифровая модель рельефа</rus>
+        <eng>Digital relief model</eng>
+    </map_window_title_srtm>
+    <map_window_title_encsrtm>
+        <rus>Улучшенная цифровая модель рельефа</rus>
+        <eng>Enchanced SRTM (no sinks and flats)</eng>
+    </map_window_title_encsrtm>
+    <map_window_title_flowdir>
+        <rus>Карта направлений стока</rus>
+        <eng>Flow direction pixel map</eng>
+    </map_window_title_flowdir>
+    <map_window_title_floworder>
+        <rus>Выявленные порядки водотока</rus>
+        <eng>Detected flow orders</eng>
+    </map_window_title_floworder>
+    <map_window_base_surface>
+        <rus>Базисная поверхность # порядка</rus>
+        <eng>Base surface of # order</eng>
+    </map_window_base_surface>
+    <map_window_base_diff>
+        <rus>Разностная поверхность #</rus>
+        <eng>Difference base surface #</eng>
+    </map_window_base_diff>
+    <selected_layer_stat>
+        <rus>Статистика слоя</rus>
+        <eng>Stat for selected layer</eng>
+    </selected_layer_stat>
+    <compute_bs_title>
+        <rus>Выберите порядок водотока, пожалуйста...</rus>
+        <eng>Please, select flow order...</eng>
+    </compute_bs_title>
+    <compute_bs_label>
+        <rus>Выберите порядок для вычисления БП</rus>
+        <eng>Choose flow order to compute BS.</eng>
+    </compute_bs_label>
+    <app_info_label>
+        <rus>Программное обеспечение ENOE разработано Сергеем Л. Шевыревым (c) 2023 г.</rus>
+        <eng>ENOE software has been developed by Sergei L Shevyrev (c) 2023</eng>
+    </app_info_label>
+    <app_info_title>
+        <rus>Информация</rus>
+        <eng>Information</eng>
+    </app_info_title>
+    <base_surface_error_dialog_title>
+        <rus>Невозможно выполнить операцию</rus>
+        <eng>Operation could not be completed</eng>
+    </base_surface_error_dialog_title>
+    <base_surface_error_dialog_text>
+        <rus>Возможна ошибка ключа. Попробуйте другие слои</rus>
+        <eng>Possible key error. Try another layers</eng>
+    </base_surface_error_dialog_text>
+    <report_main_title>
+        <rus>ENOE - Генератор отчетов в приложении</rus>
+        <eng>ENOE - Report generator</eng>
+    </report_main_title>
+    <report_drm_title>
+        <rus>Цифровая модель рельефа</rus>
+        <eng>Digital relief model</eng>
+    </report_drm_title>
+    <report_drm_text>
+        <rus>Цифровая модель рельефа территории исследования
+            характеризуется максимальной высотой #heightmax
+            м минимальной высотой #heightmin м и средней высотой
+            #heightmean м. Площадь территории исследования составляет
+            #area км2. </rus>
+        <eng>The digital relief model of the study area has maximum
+            height #heightmax m, the minimum height #heightmin m and
+            the average height of #heightmean m. The area of the
+            studied territory is #area km2.</eng>
+    </report_drm_text>
+    <report_flowdir_title>
+        <rus>Карта направлений стока</rus>
+        <eng>Drainage direction map</eng>
+    </report_flowdir_title>
+    <report_flowdir_text>
+        <rus>Построение карты направлений стока [2] выполнено с помощью
+            алгоритма D8 библиотеки pysheds [1], отражающего распределение
+            поверхностного стока на территории. </rus>
+        <eng>Composing of drainage direction map was done with D8
+            algorithm [4] from the pysheds library [1]. That map
+            reflects distribution of the surface drainage over
+            the area.</eng>
+    </report_flowdir_text>
+    <report_floworder_title>
+        <rus>Карта порядков водотоков</rus>
+        <eng>Flow orders map</eng>
+    </report_floworder_title>
+    <report_floworder_text>
+        <rus>Для территории выполнен расчет карты порядков водотоков
+            (числа Стрейлера для объектов эрозионной сети [5]).
+            Наибольший порядок выявленных водотоков #order.</rus>
+        <eng>Flow orders map was derived for the area. This map shows
+            Strahler numbers for the erosion network [5].
+            The highest Strahler number found is #order. </eng>
+    </report_floworder_text>
+    <report_basesurf_title>
+        <rus>Карта базисной поверхности #order порядка</rus>
+        <eng>Base level surface map of #order order</eng>
+    </report_basesurf_title>
+    <report_basesurf_text>
+        <rus>Для территории исследования было выполнено построение карты
+            базисной поверхности #order порядка [2,3,5]. Карта отражает
+            усреднённое распределение высотных отметок, характерных для
+            водотоков #order порядка (числа Стрейлера), которая стремится
+            к высотным отметкам территории при заложении водотоков этих
+            порядков в соотвествии с [2,3,5]. Более низкое значение числа
+            Стрейлера соответствует более молодым водотокам, более высокое
+            - древним. Белые области (значения НетДанных) соответствуют зонам,
+            где водотоки #order порядка не представлены. Локальные аномалии
+            могут соответствовать областям тектонического воздымания или наличию
+            пород, обладающих повышенной эрозионной устойчивостью.</rus>
+        <eng>Map of the #order base erosion level erosion surface map [2,3,5]
+            was made for the explored area. Map reflects median distribution
+            of the elevation of the drain network flow of corresponding,
+            Strahler number #order . Base erosion level surface of #order tends to
+            elevations of the area during incision of flows of #order  order.
+            Lower values of Strahler number correspond to more recent generations of flows.
+            White zones (NoData values) correspond to area where flows of #order
+            orders are not occured. Local anomalies could indicate areas of active
+            uplifts or presence of rocks, which are resistant to erosion. </eng>
+    </report_basesurf_text>
+    <report_basediffsurf_title>
+        <rus>Карта разностной эрозионной поверхности (#order0 - #order1)</rus>
+        <eng>Map of difference of erosional surfaces (#order0 - #order1)</eng>
+    </report_basediffsurf_title>
+    <report_basediffsurf_text>
+        <rus> Карта разности эрозионных поверхностей демонстрирует значение амплитуды
+            воздымания или опускания [5]. Например, карта разности эрозионных поверхностей
+            2-3 демонстрирует разность базисных поверхностей 2 и 3 порядков.
+            Она показывает амплитуды воздымания отдельных участков поверхности
+            или эрозионного среза за промежуток времени между формированием генераций
+            водотоков. Для интерпретации карты базисных поверхностей требуется информация
+            о геологическом строении территории. Скорость тектонических изменений может быть
+            оценена при уточнении возраста рассматриваемых генераций речных долин.
+        </rus>
+        <eng> Map of difference of erosional surfaces demonstrates value of amplitude
+            of up- or downlifting [5]. For instance, map of reference of erosional surface
+            of 2-3 demonstrates value of amplitude of 2 and 3 Strahler number. That surface
+            reflects amplitudes of movements of erosional basis between moments of incision
+            of flows of 2 and 3 number. Interpretation of base erosional surface difference
+            requires geological background of the area. Velocity of tectonic movements could
+            be accessed along with the age of valleys.
+        </eng>
+    </report_basediffsurf_text>
+    <report_reference_title>
+        <rus>Литература</rus>
+        <eng>Reference</eng>
+    </report_reference_title>
+    <report_reference_text>
+        <rus>
+            1. PySheds library. URL: https://github.com/mdbartos/pysheds
+            2. Philosophov, V.P., 1967. About meaning of orders of valleys and watershed lines in geologic-geographic
+            researches / V.P. Philosophov // Tasks of morphometry. Vol. 2. Saratov. SSU. 1967, pp. 4-67. (in Russian).
+            3.  Philosophov, V.P., 1975. Principals of morphometric method tectonic structures search / Saratov. SSU. 232 p. (in Russian).
+            5. Schwanghart, W., Groom, G., Kuhn, N.J., Heckrath, G., 2013. Flow network derivation from a high resolution DEM in a low relief, agrarian landscape / Earth Surface Processes and Landforms. V. 38,
+            issue 13. URL: https://doi.org/10.1002/esp.3452
+            6. Shevyrev Sergei, 2019 Neotectonics, remote sensing and erosion cut of ore-controlling structures of the Mnogovershinnoe gold-silver deposit (Khabarovsk Krai, Russian Far East). Ore Geology Reviews,
+            Volume 108, 2019. Pages 8-22. https://doi.org/10.1016/j.oregeorev.2018.11.016
+            7. Strahler, A. N., 1957. Quantitative analysis of watershed geomorphology / A.N. Strahler // Eos Trans. AGU. Vol. 38(6), p. 913-920.
+        </rus>
+        <eng>
+            1. PySheds library. URL: https://github.com/mdbartos/pysheds
+            2. Philosophov, V.P., 1967. About meaning of orders of valleys and watershed lines in geologic-geographic researches / V.P. Philosophov // Tasks of morphometry. Vol. 2. Saratov. SSU. 1967, pp. 4-67. (in Russian).
+            3.  Philosophov, V.P., 1975. Principals of morphometric method tectonic structures search / Saratov. SSU. 232 p. (in Russian).
+            5. Schwanghart, W., Groom, G., Kuhn, N.J., Heckrath, G., 2013. Flow network derivation from a high resolution DEM in a low relief, agrarian landscape / Earth Surface Processes and Landforms. V. 38,
+            issue 13. URL: https://doi.org/10.1002/esp.3452
+            6. Shevyrev Sergei, 2019 Neotectonics, remote sensing and erosion cut of ore-controlling structures of the Mnogovershinnoe gold-silver deposit (Khabarovsk Krai, Russian Far East). Ore Geology Reviews,
+            Volume 108, 2019. Pages 8-22. https://doi.org/10.1016/j.oregeorev.2018.11.016
+            7. Strahler, A. N., 1957. Quantitative analysis of watershed geomorphology / A.N. Strahler // Eos Trans. AGU. Vol. 38(6), p. 913-920.
+        </eng>
+    </report_reference_text>
+</commands>
+</body>

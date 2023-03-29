@@ -1,0 +1,8 @@
+ENOE v0.6 uses following 3rd parties libraries:
+
+pysheds
+numpy
+gdal/ogr
+scikit-learn
+matplotlib
+PyQt5

@@ -7,3 +7,4 @@ scikit-learn
 matplotlib
 PyQt5
 networkx 
+xmltodict

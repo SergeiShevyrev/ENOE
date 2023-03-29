@@ -46,17 +46,6 @@ form_main, base_main = uic.loadUiType(uifile_main)
 form_map, base_map = uic.loadUiType(uifile_map)
 form_export, base_export = uic.loadUiType(uifile_export)
 
-"""
-Последовательность действий при работе:
-Open SRTM -> Preprocess SRTM (remove sinks and flats) -> Flow directions map -> Extract river network (including orders) ->
--> interpolate base surfaces for selected orders -> select any 2 base surfaces available -> compute base surface difference ->
--> EXPORT SELECTED LAYERS (river orders as shp, surfaces as geotiff)
-"""
-
-
-# 3D Matplotlib
-# TODO; 1) main_ui.pu LAYOUT! 2) Report generating 3) Проверять что папка для вывода отчета не пуста
-
 
 class Main(base_main, form_main):
     resized = QtCore.pyqtSignal()

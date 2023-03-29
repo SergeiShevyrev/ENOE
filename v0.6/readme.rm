@@ -6,3 +6,4 @@ gdal/ogr
 scikit-learn
 matplotlib
 PyQt5
+networkx 

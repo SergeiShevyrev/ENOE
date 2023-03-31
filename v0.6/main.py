@@ -156,7 +156,7 @@ class Main(base_main, form_main):
         # show browser window on double click
         self.list1.itemDoubleClicked.connect(self.map_browser.show)
         # set fixed size
-        self.setFixedSize(700, 390)
+        #self.setFixedSize(700, 390)
 
         # try to load and parse language file
         self.language_dict = []

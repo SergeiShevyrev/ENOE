@@ -8,3 +8,4 @@ matplotlib
 PyQt5
 networkx 
 xmltodict
+pandas

@@ -253,6 +253,10 @@
         <rus>Карта направлений стока</rus>
         <eng>Flow direction pixel map</eng>
     </map_window_title_flowdir>
+    <map_window_title_flowacc>
+        <rus>Карта накопленного потока</rus>
+        <eng>Accumulated flow pixel map</eng>
+    </map_window_title_flowacc>
     <map_window_title_floworder>
         <rus>Выявленные порядки водотока</rus>
         <eng>Detected flow orders</eng>
@@ -316,6 +320,10 @@
         <rus>Карта направлений стока</rus>
         <eng>Drainage direction map</eng>
     </report_flowdir_title>
+    <report_flowacc_title>
+        <rus>Карта накопленного стока</rus>
+        <eng>Flow accumulation map</eng>
+    </report_flowacc_title>
     <report_flowdir_text>
         <rus>Построение карты направлений стока [2] выполнено с помощью
             алгоритма D8 библиотеки pysheds [1], отражающего распределение
@@ -325,6 +333,15 @@
             reflects distribution of the surface drainage over
             the area.</eng>
     </report_flowdir_text>
+    <report_flowacc_text>
+        <rus>Построение карты накопленного стока [2] выполнено с помощью
+            метода grid.accumulation библиотеки pysheds [1], отражающего распределение
+            накопленного поверхностного стока на территории. </rus>
+        <eng>Composing of drainage direction map was done with grid.accumulation
+            method [4] from the pysheds library [1]. That map
+            reflects distribution of the accumulated surface flow over
+            the area.</eng>
+    </report_flowacc_text>
     <report_floworder_title>
         <rus>Карта порядков водотоков</rus>
         <eng>Flow orders map</eng>

@@ -423,7 +423,13 @@ class Main(base_main, form_main):
             item1 = QListWidgetItem()  # need to copy theese items twice
             item1.setText('flow directions')
             item1.setToolTip(self.language_dict['commands']['map_window_title_flowdir'][self.selected_language])
-            self.map_browser.setWindowTitle(self.language_dict['commands']['map_window_title_flowdir'][self.selected_language])
+            #self.map_browser.setWindowTitle(self.language_dict['commands']['map_window_title_flowdir'][self.selected_language])
+            self.list1.addItem(item1)
+        if 'flow accumulation' not in self.get_list_items_text(self.list1):
+            item1 = QListWidgetItem()  # need to copy theese items twice
+            item1.setText('flow accumulation')
+            item1.setToolTip(self.language_dict['commands']['map_window_title_flowacc'][self.selected_language])
+            #self.map_browser.setWindowTitle(self.language_dict['commands']['map_window_title_flowdir'][self.selected_language])
             self.list1.addItem(item1)
 
     def on_flow_order(self):
@@ -510,6 +516,10 @@ class Main(base_main, form_main):
                 # print([*self.base_surfaces_diff_dict])
                 # print(key)
                 self.show_result([self.base_surfaces_diff_dict[key]])
+            elif (item_list[0] == 'flow accumulation'):
+                self.map_browser.setWindowTitle(
+                    self.language_dict['commands']['map_window_title_flowacc'][self.selected_language])
+                self.show_result([self.flow_acc])
             else:
                 self.map_browser.setWindowTitle('Digital relief model')
                 self.show_result([self.srtm])
@@ -1244,6 +1254,9 @@ class exportMap(base_export, form_export):  # map browser
         elif (layer_name == 'flow orders'):
             export_title = export_title + 'detected flow orders'
             export_obj = self.parent.flow_orders
+        elif (layer_name == 'flow accumulation'):
+            export_title = export_title + 'detected flow orders'
+            export_obj = self.parent.flow_acc
         elif "base-" in layer_name:
             key = int(layer_name.split('-')[1])
             export_title = export_title + f'base surface of {key} order'

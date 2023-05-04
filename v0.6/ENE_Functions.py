@@ -23,7 +23,7 @@ except ModuleNotFoundError:
 
 from sklearn.neighbors import \
     NearestNeighbors  # for arranging points into natural order https://stackoverflow.com/questions/37742358/sorting-points-to-form-a-continuous-line
-from networkx import from_scipy_sparse_matrix, dfs_preorder_nodes
+from networkx import from_scipy_sparse_array, dfs_preorder_nodes
 from pysheds.sview import Raster
 
 # import interfacefeatures for progress bar window
@@ -242,7 +242,7 @@ def saveLinesShpFile3(lines, filename, gdal_object):
             clf = NearestNeighbors(n_neighbors=2).fit(points)
             G = clf.kneighbors_graph()  # G is a sparse N x N matrix
 
-            T = from_scipy_sparse_matrix(G)  # use networkx to construct a graph from this sparse matrix
+            T = from_scipy_sparse_array(G)  # use networkx to construct a graph from this sparse matrix
 
             # Find shortest path from source
 

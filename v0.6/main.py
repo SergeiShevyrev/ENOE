@@ -601,6 +601,14 @@ class Main(base_main, form_main):
                     txt=self.language_dict['commands']['report_flowdir_text'][self.selected_language]
                     txt='<p>'+txt+'</p>'
                     f.write(txt)
+            elif (layer_list[i] == 'flow accumulation'):
+                img = self.flow_acc
+                ititle = self.language_dict['commands']['map_window_title_flowacc'][self.selected_language]
+                with open(report_fn, 'a') as f:
+                    f.write('<h3>' + self.language_dict['commands']['report_flowacc_title'][self.selected_language] + '</h3>')
+                    txt=self.language_dict['commands']['report_flowacc_text'][self.selected_language]
+                    txt='<p>'+txt+'</p>'
+                    f.write(txt)
             elif (layer_list[i] == 'flow orders'):
                 img=self.flow_orders
                 ititle = self.language_dict['commands']['report_floworder_title'][self.selected_language]

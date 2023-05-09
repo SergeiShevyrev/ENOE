@@ -611,11 +611,12 @@ class Main(base_main, form_main):
                     f.write(txt)
             elif (layer_list[i] == 'flow orders'):
                 img=self.flow_orders
+                max_val=np.max(img)
                 ititle = self.language_dict['commands']['report_floworder_title'][self.selected_language]
                 with open(report_fn, 'a') as f:
                     f.write('<h3>' + self.language_dict['commands']['report_floworder_title'][self.selected_language] + '</h3>')
                     txt=self.language_dict['commands']['report_floworder_text'][self.selected_language]
-                    txt = txt.replace('#order', str(key))
+                    txt = txt.replace('#order', str(max_val))
                     txt='<p>'+txt+'</p>'
                     f.write(txt)
             elif ("base" in layer_list[i]) and ("diff" not in layer_list[i]):

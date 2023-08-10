@@ -9,16 +9,12 @@ hence the dimension is greater.
 You can exclude, for example, by renaming as ".tiff"
 """
 
-#files for processing, input and output directory
-#pathrowfolder="111_028"
-#datefolder="2019_10_16"  #"2017_10_26"
 #shapefile of cropping extent
-shapefilename='AOI_Salyut_Kuznetsovka_5.shp'; # sea area
-foldname='AST_L1T_SWIR_21052003_TO_USE';
+shapefilename='AOI_5.shp'; # sea area
+foldname='TO_USE';
 foldname_full="../"+foldname;
 out_dir_name='AST_L1T_'+foldname+'_Unpacked'
 metafn='meta.txt';
-#imgfilepath=os.path.join("..","AST_L1T_SWIR_21052003_TO_USE"); 
 shpfilepath=os.path.join("..","shp",shapefilename);
 
 fileext="tif"; #extention for files
@@ -33,19 +29,17 @@ band_number_inname=band_number_inname.lower();
 target_resolution=15; #resolution to be used in bands resize, POSSIBLE values 15,30,90 m
 
 #points
-points_shp_filepath=os.path.join("..","shp","ore_points_without_kuznetsov.shp");
+points_shp_filepath=os.path.join("..","shp","points.shp");
 ore_point_radius_m=150; #300
 radius=ore_point_radius_m/target_resolution; #радиус объекта в пикселях 
 
 #drm for topocorrection
-drm_name="n46_e137138.tif";
+drm_name="n.tif";
 drm_folder=os.path.join("..","srtm","dem");
 drm_filepath=os.path.join(drm_folder,drm_name);
 
 #points raster
 raster_path=os.path.join(dir_products_path,"ore.tif");
-    
-#sample_folder_path= os.path.join("..","Landsat_8_OLI_Processed",pathrowfolder,datefolder,dir_cropped);
 
 #model output and parameters
 file_model_data_name='model_data';

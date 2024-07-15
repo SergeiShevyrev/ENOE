@@ -216,7 +216,7 @@ print('Removing temporary files')
 for file in os.listdir('out'):         #exclude 3band tif files
     if (file.lower().endswith("."+'tif'.lower()) and file.lower().startswith('prox')) or (file.lower().endswith("."+'tif'.lower()) and file.lower().startswith('out')):
         print('removing ', file)
-        os.remove(file)
+        os.remove(os.path.join('out',file))
 print('Removing temporary files - DONE')
 
 print('done')

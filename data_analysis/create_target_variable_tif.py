@@ -214,7 +214,7 @@ saveGeoTiff(prox_result,proximity_total,gdal_object,0,0)
 print('Removing temporary files')
 
 for file in os.listdir('out'):         #exclude 3band tif files
-    if (file.lower().endswith("."+'tif'.lower()) and file.lower().startswith('prox')) or (file.lower().endswith("."+'tif'.lower()) and file.lower().startswith('out')):
+    if (file.lower().endswith("."+'tif'.lower()) and file.lower().startswith('prox') and not file==proximity_total) or (file.lower().endswith("."+'tif'.lower()) and file.lower().startswith('out')):
         print('removing ', file)
         os.remove(os.path.join('out',file))
 print('Removing temporary files - DONE')

@@ -210,4 +210,13 @@ for ri in range(0,r):
 print('saving results...')
 #save resulting proximity raster
 saveGeoTiff(prox_result,proximity_total,gdal_object,0,0)
+
+print('Removing temporary files')
+
+for file in os.listdir('out'):         #exclude 3band tif files
+    if (file.lower().endswith("."+'tif'.lower()) and file.lower().startswith('prox')) or (file.lower().endswith("."+'tif'.lower()) and file.lower().startswith('out')):
+        print('removing ', file)
+        os.remove(file)
+print('Removing temporary files - DONE')
+
 print('done')

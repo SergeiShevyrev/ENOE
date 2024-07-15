@@ -63,17 +63,17 @@ def main(inputfn, outputBufferfn, bufferDist):
 
 
 
-inputfn = 'placers_ training_utm53.shp'
-outputBufferfn = 'testBuffer_training.shp'
-bufferDist = 350 #m
+inputfn = os.path.join('in','placers_ training_utm53.shp')
+outputBufferfn = os.path.join('out','testBuffer_training.shp')
+bufferDist = 150 #m
 
 main(inputfn, outputBufferfn, bufferDist)
 
 #####растетизация созданного слоя с буферными зонами
 #https://gis.stackexchange.com/questions/212795/rasterizing-shapefiles-with-gdal-and-python
 
-ndsm = 'srtm_surroundings_30032017.tif'
-shp = 'testBuffer_training.shp'
+ndsm = os.path.join('in','srtm_surroundings_30032017.tif')
+shp = os.path.join('out','testBuffer_training.shp')
 data = gdal.Open(ndsm, gdalconst.GA_ReadOnly)
 geo_transform = data.GetGeoTransform()
 #source_layer = data.GetLayer()
@@ -92,7 +92,7 @@ mb_v = ogr.Open(shp)
 mb_l = mb_v.GetLayer()
 pixel_width = geo_transform[1]
 pixel_height = geo_transform[5]
-output = 'rasterized_training.tif'
+output = os.path.join('out','rasterized_training.tif')
 target_ds = gdal.GetDriverByName('GTiff').Create(output, x_res, y_res, 1, gdal.GDT_Byte)
 target_ds.SetGeoTransform((x_min, pixel_width, 0, y_min, 0, -pixel_height))
 band = target_ds.GetRasterBand(1)
@@ -114,7 +114,7 @@ gdal.UseExceptions()
 #Create euclidean distance for each polygon and store "Values"
 out_raster_template = os.path.join('out','out_{}.tif')
 out_proximity_template = os.path.join('out','prox_{}.tif')
-shape_file = "magmatic_bodies_utm53.shp"
+shape_file = os.path.join('in',"magmatic_bodies_utm53.shp")
 
 pixel_size = 10
 nodata = -9999
@@ -145,8 +145,8 @@ for feat in lyr:
 
     out_raster = out_raster_template.format(id)
     prox_raster = out_proximity_template.format(id)
-    tmp_fn = 'tmp.shp'
-    tmp_raster = 'tmp.tif'
+    tmp_fn = os.path.join('out','tmp.shp')
+    tmp_raster = os.path.join('out','tmp.tif')
     tmp_ds = drv.Create(tmp_fn, 0, 0, 0, gdal.GDT_Unknown )
     tmp_lyr = tmp_ds.CreateLayer(tmp_fn, None, feat_def.GetGeomType())
     tmp_lyr.CreateFeature(tmp_feat)
@@ -185,7 +185,7 @@ for feat in lyr:
     drv.Delete(tmp_fn)
 
 #combine intrusions proximity to one layer
-proximity_total='proximity_intrusions.tif'
+proximity_total=os.path.join('out','proximity_intrusions.tif')
 raster_data=[]
 print('reading rendered files from appropriate directory')
 for file in os.listdir('out'):         #exclude 3band tif files
